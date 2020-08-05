@@ -23,7 +23,11 @@ class Song
   end 
   
   def self.artists
-    @@artists.reject { |x| x.include?(artist) }  
+    @@artists.uniq  
+  end 
+  
+  def genre_count 
+      
   end 
 
 

@@ -23,7 +23,7 @@ class Song
   end 
   
   def self.artists
-    @@artists.uniq   
+    @@artists.reject { |x| x.include?(artist) }  
   end 
 
 

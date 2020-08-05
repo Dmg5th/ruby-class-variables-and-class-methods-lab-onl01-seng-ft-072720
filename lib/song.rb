@@ -7,10 +7,10 @@ class Song
   
   def initialize(name, artist, genre)
     @name = name 
-    @artist = artist 
     @genre = genre 
+    @@genres.push(genre)
+    @@artist.push(artist)
     @@count += 1 
-    @@genres.push(genre).uniq 
   end 
   
   def self.count
